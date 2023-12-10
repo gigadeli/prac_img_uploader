@@ -26,7 +26,6 @@ function App() {
     axios.get("http://localhost:3001/images")
     .then(res => {
       setImgData(res.data)
-      // console.log("imgData", imgData)
     })
     .catch(err => console.log(err))
   }
